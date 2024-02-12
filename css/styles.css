@@ -748,7 +748,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 color: #4D5AE5;
 }
 
-.span {
+span {
   width: 16px;
     height: 16px;
     border-radius: 2px;
