@@ -401,6 +401,7 @@ overflow: hidden;
 
 /*=========footer==========*/
 .footer {
+  display: block;
   flex-shrink: 0;
   background: #2e2f42;
   display: flex;
@@ -412,30 +413,32 @@ overflow: hidden;
 .container-footer {
   display: flex;
   align-items: baseline;
+  width: 100%;
+  max-width: 1158px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .web-footer {
-  width: 264px;
-  height: 112px;
-  margin-right: 120px;
+ margin-right: 120px;
 }
 .footer-studio {
   color: #f4f4fd;
 }
 .footer-text {
-  color: #f4f4fd;
+    color: #f4f4fd;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
-    
 }
-  
+
 .footer-logo {
+  width: 115px;
+  height: 24px;
   color: #4d5ae5;
-  font-family: "Raleway", sans-serif;
   font-size: 18px;
-  font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -447,6 +450,7 @@ overflow: hidden;
   display: inline-block;
   align-items: center;
   flex-direction: column;
+  margin-right: 80px;
 }
 
 .icons-footer {
@@ -480,12 +484,10 @@ background-color: #31D0AA;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    margin-left: 80px;
 }
 
 
 .footer-sub-text {
-  margin-left: 80px;
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
@@ -499,7 +501,6 @@ background-color: #31D0AA;
 }
 
 .footer-input {
-    margin-left: 80px;
     width: 264px;
     height: 40px;
     font-size: 12px;
@@ -510,7 +511,6 @@ background-color: #31D0AA;
     color: #ffffff;
     padding-left: 16px;
     background-color: transparent;
-    margin-right: 24px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     
 }
@@ -560,11 +560,11 @@ margin-left: 16px;
   position: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0.2, 0, 1);
 }
-.is-open {
+/*.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-}
+}*/
 .modal {
   position: absolute;
   width: 408px;
@@ -746,7 +746,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 color: #4D5AE5;
 }
 
-span {
+.modal-span {
   width: 16px;
     height: 16px;
     border-radius: 2px;
@@ -759,7 +759,7 @@ span {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-checkbox:checked +.checkbox-text span {
+.form-checkbox:checked +.checkbox-text .modal-span {
   background-color: #404bbf;
   border: none;
   fill: #F4F4FD;
