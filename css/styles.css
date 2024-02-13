@@ -401,7 +401,6 @@ overflow: hidden;
 
 /*=========footer==========*/
 .footer {
-  display: block;
   flex-shrink: 0;
   background: #2e2f42;
   display: flex;
@@ -413,11 +412,9 @@ overflow: hidden;
 .container-footer {
   display: flex;
   align-items: baseline;
-  width: 100%;
   max-width: 1158px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+
 }
 
 .web-footer {
